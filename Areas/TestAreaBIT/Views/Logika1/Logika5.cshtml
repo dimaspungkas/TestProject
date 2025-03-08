@@ -1,0 +1,40 @@
+﻿@{
+    ViewBag.Title = "Logic Test 5";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<body id="Logika5">
+    <section class="row">
+        <h1 id="title">Tugas Logika 5: Jual-beli Saham</h1>
+        <p class="lead">
+            Harga saham tiap hari diberikan dalam sebuah array.
+            <br />
+            Carilah profit tertinggi yang bisa didapatkan dari memberi dan menjual. Hari beli < Hari Jual.
+            <br />
+            Algoritma cukup untuk mencari 1 kali pembelian dan 1 kali penjualan
+        </p>
+    </section>
+
+    <div class="row">
+        <section class="col-md-12">
+            <div class="p-1">
+                <label class="col-form-label">Sample Input</label>
+                <input class="form-control" id="sampleInput" placeholder="Sample Input" />
+            </div>
+            <div class="p-1">
+                <label class="col-form-label">Output</label>
+                <input class="form-control" id="sampleOutput" placeholder="Output" disabled />
+            </div>
+            <div class="col-md-2 p-1">
+                <button class="btn btn-primary" id="btnTry">Try</button>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
+@section Scripts
+{
+    <script src="~/Areas/TestAreaBIT/Lib/Logika1.js?v=2"></script>
+}
