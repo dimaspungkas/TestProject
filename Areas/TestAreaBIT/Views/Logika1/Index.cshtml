@@ -1,0 +1,41 @@
+﻿@{
+    ViewBag.Title = "Logic Test 1";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<body id="Logika1">
+    <section class="row">
+        <h1 id="title">Tugas Logika 1: Perfect Two</h1>
+        <p class="lead">
+            Diberikan array berisi n integer. Berikan index dari kedua angka yang jika dijumlahkan bisa
+            menjadi sama dengan target yang diberikan.
+            <br />
+            Asumsikan bahwa semua input ini akan memberikan 1 solusi saja. Jangan mengulang angka
+            yang sama!
+        </p>
+    </section>
+
+    <div class="row">
+        <section class="col-md-12">
+            <div class="p-1">
+                <label class="col-form-label">Array => <span class="text-bg-info">Default Array is [2,7,11,15]</span></label>
+                <input class="form-control" id="ArrayVal" placeholder="2,7,11,15" />
+            </div>
+            <div class="p-1">
+                <label class="col-form-label">Sample Input</label>
+                <input class="form-control" id="sampleInput" type="number" placeholder="Sample Input" />
+            </div>
+            <div class="p-1">
+                <label class="col-form-label">Output</label>
+                <input class="form-control" id="sampleOutput" placeholder="Output" disabled />
+            </div>
+        </section>
+    </div>
+</body>
+</html>
+@section Scripts
+{
+    <script src="~/Areas/TestAreaBIT/Lib/Logika1.js?v=2"></script>
+}

@@ -1,0 +1,162 @@
+﻿@{
+    ViewBag.Title = "Test GSI";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        input.form-control {
+            min-width: 340px;
+        }
+    </style>
+</head>
+<body>
+    <section class="row">
+        <h1 id="title">Test GSI</h1>
+    </section>
+
+    <div class="row">
+        <section class="col-md-12 py-2" id="soal1">
+            <h2 id="title">Soal 1</h2>
+            <p class="lead">
+                Kamus = [
+                <br />
+                { A, 0 },
+                { B-D, 1 },
+                { E, 2 },
+                { F-H, 3 },
+                { I, 4 },
+                { J-N, 5 },
+                { O, 6 },
+                { P-T, 7 },
+                { U, 8 },
+                { V-Z, 9 },
+                { a, 9 },
+                <br />
+                { b-d, 8 },
+                { e, 7 },
+                { f-h, 6 },
+                { i, 5 },
+                { j-n, 4 },
+                { o, 3 },
+                { p-t, 2 },
+                { u, 1 },
+                { v-z, 0 },
+                { space, 0 }
+                <br />
+                ]
+            </p>
+            <div class="p-1">
+                <label class="col-form-label">Sample Input</label>
+                <input type="text" class="form-control" id="sampleInput" placeholder="Sample Input" />
+            </div>
+            <div class="p-1">
+                <button class="btn btn-primary" id="btnProcess">Process</button>
+            </div>
+            <div class="p-1">
+                <label class="col-form-label">Output</label>
+                <input class="form-control" id="sampleOutput" placeholder="Output" disabled />
+            </div>
+        </section>
+
+        <section class="col-md-12 py-2" id="soal2">
+            <h2 id="title">Soal 2</h2>
+            <p class="lead">
+                Ubah, jumlah, dan kurangkan secara bergantian dari hasil konversi nomor 1.
+            </p>
+            <div class="p-1">
+                <label class="col-form-label">Sample Input</label>
+                <input type="text" class="form-control" id="sampleInput" placeholder="Sample Input" disabled />
+            </div>
+            <div class="p-1">
+                <label class="col-form-label">Output</label>
+                <input class="form-control" id="sampleOutput" placeholder="Output" disabled />
+            </div>
+        </section>
+
+        <section class="col-md-12 py-2" id="soal3">
+            <h2 id="title">Soal 3</h2>
+            <p class="lead">
+                Konversikan hasil dari nomor 2 dan dikembalikan ke dalam bentuk abjad (huruf
+                besar) sesuai kamus yang diberikan di atas.
+                Ketentuan:
+                a. Apabila hasil negative, maka diubah ke bilangan positif.
+                b. Huruf yang dipakai adalah huruf besar.
+                c. Apabila terdapat abjad range maka diambil huruf pertama (Contoh: B – D, maka
+                diambil huruf B).
+                d. Pengambilan huruf diambil secara berurutan (Contoh: A B E F = 6, bukan A A A A
+                A A = 6)
+            </p>
+            <div class="p-1">
+                <label class="col-form-label">Sample Input</label>
+                <input type="text" class="form-control" id="sampleInput" placeholder="Sample Input" disabled />
+            </div>
+            <div class="p-1">
+                <label class="col-form-label">Explanation</label>
+                <input type="text" class="form-control" id="explanation" placeholder="Explanation" disabled />
+            </div>
+            <div class="p-1">
+                <label class="col-form-label">Output</label>
+                <input class="form-control" id="sampleOutput" placeholder="Output" disabled />
+            </div>
+        </section>
+
+        <section class="col-md-12 py-2" id="soal4">
+            <h2 id="title">Soal 4</h2>
+            <p class="lead">
+                Konversikan hasil nomor 3 menjadi sample output seperti table di bawah.
+                Petunjuk:
+                a. Ubah input yang didapat menjadi sebuah bilangan kembali (bisa
+                menggunakan kamus di atas).
+                b. Lakukan operasi matematika terhadap bilangan tersebut hingga menjadi
+                bilangan baru.
+                c. Lakukan perubahan kembali ke bentuk abjad (menggunakan kamus) dan
+                pastikan telah sesuai dengan bentukan contoh di bawah.
+            </p>
+            <div class="p-1">
+                <label class="col-form-label">Sample Input</label>
+                <input type="text" class="form-control" id="sampleInput" placeholder="Sample Input" disabled />
+            </div>
+            <div class="p-1">
+                <label class="col-form-label">Explanation</label>
+                <textarea class="form-control" id="explanation" placeholder="Explanation" rows="5" style="min-width: 340px; resize: vertical;" disabled></textarea>
+            </div>
+            <div class="p-1">
+                <label class="col-form-label">Output</label>
+                <input class="form-control" id="sampleOutput" placeholder="Output" disabled />
+            </div>
+        </section>
+
+        <section class="col-md-12 py-2" id="soal5">
+            <h2 id="title">Soal 5</h2>
+            <p class="lead">
+                Dari hasil nomor 4, silakan lakukan perubahan kembali menjadi sample output
+                seperti table di bawah.
+                Petunjuk:
+                a. Lakukan operasi matematika terhadap huruf tersebut hingga menjadi huruf
+                baru.
+                b. Lakukan perubahan kembali ke bentuk bilangan (menggunakan kamus) dan
+                pastikan telah sesuai dengan bentukan contoh di bawah.
+            </p>
+            <div class="p-1">
+                <label class="col-form-label">Sample Input</label>
+                <input type="text" class="form-control" id="sampleInput" placeholder="Sample Input" disabled />
+            </div>
+            <div class="p-1">
+                <label class="col-form-label">Explanation</label>
+                <textarea class="form-control" id="explanation" placeholder="Explanation" rows="5" style="min-width: 340px; resize: vertical;" disabled></textarea>
+            </div>
+            <div class="p-1">
+                <label class="col-form-label">Output</label>
+                <input class="form-control" id="sampleOutput" placeholder="Output" disabled />
+            </div>
+        </section>
+    </div>
+</body>
+</html>
+@section Scripts
+{
+    <script src="~/Areas/TestArea/Lib/TestGSI.js?v=2"></script>
+}
